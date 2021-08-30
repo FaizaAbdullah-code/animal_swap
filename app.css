@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #2b2b2b;
+}
+
+p {
+  font-size: 22px;
+}
+
+.navbar {
+  background-color: #262d4e;
+  box-shadow: none;
+}
+
+.navbar #button {
+  font-size: 14px;
+  padding: 15px 45px;
+  background-color: #61b5de;
+  color: white;
+}
+
+.navbar #button:hover {
+  background-color: #262d4e;
+  color: #262d4e;
+}
+
+.navbar .nav-item .nav-link {
+  color: white !important;
+  font-size: 18px;
+  margin: 0px 15px;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #e963bc !important;
+  border-bottom: 2px solid #e963bc;
+}
+
+.top-nav-collapse {
+  background-color: #262d4e;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #262d4e;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #262d4e;
+  }
+}
+
+main #intro {
+  height: 180vh;
+}
+
+main #intro img {
+  max-width: 100%;
+}
+
+main #features .sec-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main #features .sec-heading .sectionUnderline {
+  background: white;
+  margin: auto;
+  width: 100px;
+  height: 3px;
+  border-radius: 50em;
+}
+
+main #features .sec-heading .title {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+main #features .card {
+  background: linear-gradient(350deg, #2b2b2b, #61b5de);
+  padding: 15px !important;
+  height: 22rem;
+}
+
+main #features .card .card-body .img-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+}
+
+main #features .card .card-body .img-container img {
+  max-height: 75px;
+}
+
+main #features .card .card-body .card-title {
+  color: white;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+main #features .card .card-body .card-text {
+  color: white;
+  font-size: 15px;
+  line-height: 29px;
+  font-weight: 400;
+  margin-top: 18px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  main #features {
+    /* Rules for tablets and smaller viewports */
+  }
+  main #features .card-body img {
+    width: 100% !important;
+  }
+}
+
+main #about .sec-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main #about .row img {
+  max-width: 100%;
+}
+
+main #about .row h3 {
+  font-size: 28px;
+  color: white;
+  line-height: 42px;
+  font-weight: 600;
+}
+
+main #about .row .sectionUnderline {
+  background: white;
+  width: 80px;
+  height: 3px;
+  border-radius: 50em;
+}
+
+main #about .row p {
+  color: white;
+  font-size: 17px;
+  line-height: 32px;
+}
+
+main #token .title h3 {
+  color: white;
+  line-height: 42px;
+  font-weight: 600;
+}
+
+main #token .sectionUnderline {
+  background: white;
+  width: 80px;
+  height: 3px;
+  border-radius: 50em;
+}
+
+main #token .row img {
+  max-width: 100%;
+}
+
+main #token .row h5 {
+  color: white;
+  line-height: 38px;
+  font-weight: 600;
+}
+
+main #token .row p {
+  color: white;
+  font-size: 14px;
+}
+
+main #roadmap {
+  /* The actual timeline (the vertical ruler) */
+  /* Container around content */
+  /* The circles on the timeline */
+  /* Place the container to the left */
+  /* Place the container to the right */
+  /* Add arrows to the left container (pointing right) */
+  /* Add arrows to the right container (pointing left) */
+  /* Fix the circle for containers on the right side */
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+}
+
+main #roadmap .title h3 {
+  color: white;
+  line-height: 42px;
+  font-weight: 600;
+}
+
+main #roadmap .sectionUnderline {
+  background: white;
+  width: 80px;
+  height: 3px;
+  border-radius: 50em;
+}
+
+main #roadmap h1 {
+  color: #2b2b2b;
+}
+
+main #roadmap .card {
+  border-radius: 10px;
+  background: linear-gradient(350deg, #2b2b2b, #61b5de);
+}
+
+main #roadmap .card .card-body {
+  color: #2b2b2b;
+}
+
+main #roadmap .card .card-body h3 {
+  font-weight: bold;
+}
+
+main #roadmap .card .card-body ul {
+  color: white;
+}
+
+main #roadmap .main-timeline {
+  position: relative;
+}
+
+main #roadmap .main-timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: #61b5de;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 5px;
+}
+
+main #roadmap .timeline {
+  position: relative;
+  width: 50%;
+}
+
+main #roadmap .timeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #61b5de;
+  border: 3px solid #2b2b2b;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+main #roadmap .left {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+main #roadmap .right {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+main #roadmap .left::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #61b5de;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #61b5de;
+}
+
+main #roadmap .right::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #61b5de;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #61b5de transparent transparent;
+}
+
+main #roadmap .right::after {
+  left: -12px;
+}
+
+@media screen and (max-width: 600px) {
+  main #roadmap {
+    /* Place the timeline to the left */
+    /* Full-width containers */
+    /* Make sure that all arrows are pointing leftwards */
+    /* Make sure all circles are at the same spot */
+    /* Make all right containers behave like the left ones */
+  }
+  main #roadmap .main-timeline::after {
+    left: 31px;
+  }
+  main #roadmap .timeline {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  main #roadmap .timeline::before {
+    left: 60px;
+    border: medium solid #61b5de;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #61b5de transparent transparent;
+  }
+  main #roadmap .left::after,
+  main #roadmap .right::after {
+    left: 18px;
+  }
+  main #roadmap .left::before {
+    right: auto;
+  }
+  main #roadmap .right {
+    left: 0%;
+  }
+}
+
+@media (max-width: 767px) {
+  #intro {
+    margin-top: 75px !important;
+    margin-bottom: 50px;
+  }
+  #intro .main_logo {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 50%;
+  }
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+}
+
+footer h4 {
+  font-size: 43px;
+  line-height: 64px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=app.css.map */
